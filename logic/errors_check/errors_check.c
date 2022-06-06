@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_numeric.c                                       :+:      :+:    :+:   */
+/*   print_limits_error.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/06 12:46:50 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 14:48:33 by prossi           ###   ########.fr       */
+/*   Created: 2022/06/06 12:52:37 by prossi            #+#    #+#             */
+/*   Updated: 2022/06/06 14:28:46 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
-int	is_numeric(int count)
+void	print_limits_error(void)
 {
-	if (count >= 48 && count <= 57)
-		return (TRUE);
-	else
-		return (FALSE);
+	ft_putstr("\nNo arguments - should be above the int limits!\n");
+}
+
+void	print_right_syntax(void)
+{
+	ft_putstr("\nError - please use the following in this order: [number_of_philosophers] [time_to_die] [time_to_eat] [time_to_sleep]\n");
 }
