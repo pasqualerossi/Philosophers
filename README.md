@@ -1,6 +1,6 @@
 # Philosophers
 
-This Project is currently in progress and is not completed just yet. 
+This project is currently in progress and is not completed just yet. 
 
 # To Run Philosophers
 
