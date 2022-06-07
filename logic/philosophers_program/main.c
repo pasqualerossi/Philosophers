@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:40:24 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 14:55:12 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:43:03 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int main(int argc, char **argv)
 {

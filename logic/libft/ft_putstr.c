@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:51:10 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 12:52:24 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:43:18 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 void	ft_putstr(char *str)
 {

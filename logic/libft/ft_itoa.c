@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 11:58:05 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 12:44:14 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:43:20 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 static unsigned int	ft_numsize(int n)
 {

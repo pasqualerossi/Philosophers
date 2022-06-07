@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   all_arguments_are_numbers.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:47:50 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 14:55:56 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:42:49 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int	all_arguments_are_numbers(char **argv)
 {

@@ -17,7 +17,7 @@ SOURCES = ./logic/errors_check/errors_check.c \
 		  ./logic/philosophers_actions/philosophers_takes_forks.c \
 		  ./logic/philosophers_program/main.c \
 		  ./logic/philosophers_program/mutex.c \
-		  ./logic/philosophers_program/philosophers.c \
+		  ./logic/philosophers_program/ft_philosophers.c \
 		  ./logic/philosophers_program/structs.c \
 		  ./logic/philosophers_utils/philosophers_message.c \
 		  ./logic/philosophers_utils/philosophers_time.c \

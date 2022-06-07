@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   arguments_outside_limits.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:48:54 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 15:02:03 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:42:45 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int	arguments_outside_limits(char *str)
 {

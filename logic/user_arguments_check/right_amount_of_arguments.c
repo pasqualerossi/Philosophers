@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   right_amount_of_arguments.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:45:55 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 14:47:23 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:42:38 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int	right_amount_of_arguments(int argc)
 {

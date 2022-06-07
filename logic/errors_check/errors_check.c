@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:52:37 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 15:03:20 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:40:59 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 void	print_limits_error(void)
 {

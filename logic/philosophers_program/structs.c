@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:57:32 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 14:15:29 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:42:56 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int	structs(t_general *general, char **argv)
 {

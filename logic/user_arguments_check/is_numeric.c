@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   is_numeric.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:46:50 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 14:48:33 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:42:43 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int	is_numeric(int count)
 {

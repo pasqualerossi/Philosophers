@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:56:45 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 14:21:04 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:43:01 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int	mutex(t_general *general)
 {

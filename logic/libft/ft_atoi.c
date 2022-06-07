@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 14:33:44 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 15:00:39 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:43:22 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int	ft_atoi(const char *str)
 {

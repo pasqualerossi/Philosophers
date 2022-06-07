@@ -6,18 +6,18 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:05:38 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 14:51:05 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:47:58 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 void	*philosophers_routine(void *arguments)
 {
 	t_philo	*philosophers;
 
 	philosophers = (t_philo *)arguments;
-	while (philosophers->general->is_dead == 0)
+	while (philosophers->general->philosopher_dead == 0)
 	{
 		if (philosopher_is_dead(philosophers))
 			return (0);
@@ -31,7 +31,7 @@ void	*philosophers_routine(void *arguments)
 		philosophers_is_eating(philosophers);
 		if (philosopher_is_dead(philosophers))
 			return (0);
-		philo_is_sleeping(philosophers);
+		philosophers_is_sleeping(philosophers);
 		if (philosopher_is_dead(philosophers))
 			return (0);
 		philosophers_is_thinking(philosophers);

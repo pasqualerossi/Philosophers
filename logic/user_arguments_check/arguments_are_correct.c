@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   arguments_are_correct.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:49:54 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 15:13:15 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:42:47 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 int	arguments_are_correct(int argc, char **argv)
 {

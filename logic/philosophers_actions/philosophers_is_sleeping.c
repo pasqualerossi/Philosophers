@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:00:26 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 12:21:13 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 15:43:10 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../../headers/philosophers.h"
 
 void	philosophers_is_sleeping(t_philo *philosophers)
 {
