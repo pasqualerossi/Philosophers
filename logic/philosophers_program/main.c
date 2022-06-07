@@ -3,11 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:40:24 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/06 12:40:26 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/07 14:55:12 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
+
+int main(int argc, char **argv)
+{
+	t_general	general;
+
+	if (arguments_are_correct(argc, argv))
+	{
+		if (structs(&general, argv))
+		{
+			begin_philosophers_routine(&general);
+		}
+	}
+}

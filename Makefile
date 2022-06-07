@@ -2,7 +2,7 @@ NAME = philo
 
 CC = gcc
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -Iheaders/
 
 SOURCES = ./logic/errors_check/errors_check.c \
 		  ./logic/libft/ft_atoi.c \
