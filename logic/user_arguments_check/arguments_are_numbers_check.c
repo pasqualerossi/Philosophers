@@ -1,32 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors_check.c                                     :+:      :+:    :+:   */
+/*   arguments_are_numbers_check.c                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/06 12:52:37 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/08 16:40:40 by prossi           ###   ########.fr       */
+/*   Created: 2022/06/06 12:47:50 by prossi            #+#    #+#             */
+/*   Updated: 2022/06/08 18:40:37 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/philosophers.h"
 
-void	ft_putstr(char *str)
+int	is_numeric(int count)
+{
+	if (count >= 48 && count <= 57)
+		return (TRUE);
+	else
+		return (FALSE);
+}
+
+int	string_is_numeric(char *str)
 {
 	int	i;
 
 	i = -1;
 	while (str[++i])
-		write(1, &str[i], 1);
+	{
+		if (is_numeric(str[i]) == FALSE)
+			return (FALSE);
+	}
+	return (TRUE);
 }
 
-void	print_limits_error(void)
+int	all_arguments_are_numbers(char **argv)
 {
-	ft_putstr("\nNo arguments - should be above the int limits!\n\n");
-}
+	int	i;
 
-void	print_right_syntax(void)
-{
-	ft_putstr("\n./philo[philos][death_time][eating_time][sleeping_time]\n\n");
+	i = 0;
+	while (argv[++i])
+	{
+		if (string_is_numeric(argv[i]))
+			;
+		else
+			return (FALSE);
+	}
+	return (TRUE);
 }
