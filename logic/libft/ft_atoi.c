@@ -6,7 +6,7 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 14:33:44 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 15:43:22 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/08 15:42:31 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,50 +14,58 @@
 
 int	ft_atoi(const char *str)
 {
+	int	is_atoi;
+	int	is_negative;
 	int	i;
-	int	neg;
-	int	res;
 
+	is_atoi = 0;
+	is_negative = 1;
 	i = 0;
-	neg = 1;
-	res = 0;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	while (str[i])
 	{
-		if (str[i] == '-')
-			neg *= -1;
-		i++;
+		while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+			i++;
+		if (str[i] == '+' || str[i] == '-')
+		{
+			if (str[i] == '-')
+				is_negative = -1;
+			i++;
+		}
+		while (str[i] >= '0' && str[i] <= '9')
+		{
+			is_atoi = (is_atoi * 10) + str[i] - 48;
+			i++;
+		}
+		return (is_atoi * is_negative);
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		res = (str[i] - '0') + (res * 10);
-		i++;
-	}
-	return (res * neg);
+	return (0);
 }
 
 long	ft_atoi_long(const char *str)
 {
-	int	i;
-	int	neg;
-	int	res;
+	long	long_atoi;
+	long	is_negative;
+	int		i;
 
+	long_atoi = 0;
+	is_negative = 1;
 	i = 0;
-	neg = 1;
-	res = 0;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	while (str[i])
 	{
-		if (str[i] == '-')
-			neg *= -1;
-		i++;
+		while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+			i++;
+		if (str[i] == '+' || str[i] == '-')
+		{
+			if (str[i] == '-')
+				is_negative = -1;
+			i++;
+		}
+		while (str[i] >= '0' && str[i] <= '9')
+		{
+			long_atoi = (long_atoi * 10) + str[i] - 48;
+			i++;
+		}
+		return (long_atoi * is_negative);
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		res = (str[i] - '0') + (res * 10);
-		i++;
-	}
-	return (res * neg);
+	return (0);
 }

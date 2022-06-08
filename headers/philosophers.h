@@ -5,22 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/06 12:41:40 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 16:12:47 by prossi           ###   ########.fr       */
+/*   Created: 2022/06/08 15:34:45 by prossi            #+#    #+#             */
+/*   Updated: 2022/06/08 15:42:09 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHILO_H
+#ifndef PHILOSOPHERS_H
 
-# define PHILO_H
+# define PHILOSOPHERS_H
 
 //DEFINES
 
-# define TRUE 1
-# define SUCCESS 1
-# define FALSE 0
-# define ERROR 0
-# define FAILURE 0
+# define TRUE 		1
+# define SUCCESS	1
+# define FALSE		0
+# define ERROR		0
+# define FAILURE	0
 
 //LIBRARIES
 
@@ -35,36 +35,31 @@
 
 typedef struct s_philo
 {
-	int		id;
-	int		last_meal;
-	int		is_eating;
-	int		time_to_die;
-	int		time_to_sleep;
-	int		time_to_eat;
-	int		number_of_meals;
-
-	pthread_t	thread_id;
-
-	pthread_mutex_t	*left_fork;
-	pthread_mutex_t	*right_fork;
-
+	int					id;
+	int					last_meal;
+	int					is_eating;
+	int					time_to_die;
+	int					time_to_sleep;
+	int					time_to_eat;
+	int					number_of_meals;
+	pthread_t			thread_id;
 	struct s_general	*general;
+	pthread_mutex_t		*left_fork;
+	pthread_mutex_t		*right_fork;
 }	t_philo;
 
 typedef struct s_general
 {
-	int		number_of_philosophers;
-	int		time_to_die;
-	int		time_to_sleep;
-	int		time_to_eat;
-	int		number_of_meals;
-	int		starting_time;
-	int		philosopher_dead;
-
+	int				number_of_philosophers;
+	int				time_to_die;
+	int				time_to_sleep;
+	int				time_to_eat;
+	int				number_of_meals;
+	int				starting_time;
+	int				philosopher_dead;
 	pthread_mutex_t	*fork_mutex;
 	pthread_mutex_t	mutex;
-
-	t_philo		*philosophers;
+	t_philo			*philosophers;
 }	t_general;
 
 //PROTOTYPES
@@ -94,9 +89,9 @@ int		philosopher_takes_forks(t_philo *philosophers);
 
 //philosophers_program folder
 
+int		initialise_philosophers(t_general *general);
 int		main(int argc, char **argv);
 int		mutex(t_general *general);
-int		initialise_philosophers(t_general *general);
 int		structs(t_general *general, char **argv);
 
 //philosophers_utils folder

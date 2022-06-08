@@ -6,7 +6,7 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:52:37 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 15:40:59 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/08 16:23:23 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	print_limits_error(void)
 {
-	ft_putstr("\nNo arguments - should be above the int limits!\n");
+	ft_putstr("\nNo arguments - should be above the int limits!\n\n");
 }
 
 void	print_right_syntax(void)
 {
-	ft_putstr("\nError - please use the following in this order: [number_of_philosophers] [time_to_die] [time_to_eat] [time_to_sleep]\n");
+	ft_putstr("\n./philo[philos][death_time][eating_time][sleeping_time]\n\n");
 }

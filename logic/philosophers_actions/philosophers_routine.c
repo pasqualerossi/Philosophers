@@ -6,7 +6,7 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:05:38 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 15:47:58 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/08 16:27:11 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,20 @@ void	*philosophers_routine(void *arguments)
 
 void	begin_philosophers_routine(t_general *data)
 {
+	int	i;
 
+	i = 0;
+	data->starting_time = get_time();
+	while (i < data->number_of_philosophers)
+	{
+		pthread_create(&data->philosophers[i].thread_id,
+			NULL, &philosophers_routine, (void *)&data->philosophers[i]);
+		i++;
+	}
+	i = 0;
+	while (i < data->number_of_philosophers)
+	{
+		pthread_join(data->philosophers[i].thread_id, NULL);
+		i++;
+	}
 }

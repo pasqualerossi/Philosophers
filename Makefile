@@ -2,7 +2,7 @@ NAME = philo
 
 CC = gcc
 
-FLAGS = -Wall -Wextra -Werror -Iheaders/
+FLAGS = -Wall -Wextra -Werror -Iheaders
 
 SOURCES = ./logic/errors_check/errors_check.c \
 		  ./logic/libft/ft_atoi.c \
@@ -17,8 +17,8 @@ SOURCES = ./logic/errors_check/errors_check.c \
 		  ./logic/philosophers_actions/philosophers_takes_forks.c \
 		  ./logic/philosophers_program/main.c \
 		  ./logic/philosophers_program/mutex.c \
-		  ./logic/philosophers_program/ft_philosophers.c \
 		  ./logic/philosophers_program/structs.c \
+		  ./logic/philosophers_program/ft_philosophers.c \
 		  ./logic/philosophers_utils/philosophers_message.c \
 		  ./logic/philosophers_utils/philosophers_time.c \
 		  ./logic/user_arguments_check/all_arguments_are_numbers.c \
@@ -26,7 +26,7 @@ SOURCES = ./logic/errors_check/errors_check.c \
 		  ./logic/user_arguments_check/arguments_outside_limits.c \
 		  ./logic/user_arguments_check/is_numeric.c \
 		  ./logic/user_arguments_check/no_arguments_outside_limits.c \
-		  ./logic/user_arguments_check/riht_amount_of_arguments.c \
+		  ./logic/user_arguments_check/right_amount_of_arguments.c \
 		  ./logic/user_arguments_check/string_is_numeric.c \
 
 OBJECTS = $(SOURCES:.c=.o)

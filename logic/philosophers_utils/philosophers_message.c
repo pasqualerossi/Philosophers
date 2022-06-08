@@ -6,7 +6,7 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:07:38 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/07 15:57:59 by prossi           ###   ########.fr       */
+/*   Updated: 2022/06/08 16:31:35 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	print_message(char *str, t_philo *philosopher)
 {
 	pthread_mutex_lock(&philosopher->general->mutex);
-	printf("%d %d %s\n", get_time() 
+	printf("%d %d %s\n", get_time()
 		- philosopher->general->starting_time, philosopher->id, str);
 	pthread_mutex_unlock(&philosopher->general->mutex);
 }
