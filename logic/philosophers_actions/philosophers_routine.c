@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:05:38 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/08 16:27:11 by prossi           ###   ########.fr       */
+/*   Updated: 2022/07/08 15:30:40 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/philosophers.h"
+#include "../../header/philosophers.h"
 
 void	*philosophers_routine(void *arguments)
 {
@@ -37,6 +37,18 @@ void	*philosophers_routine(void *arguments)
 		philosophers_is_thinking(philosophers);
 	}
 	return (0);
+}
+
+void	join_threads(t_general *data)
+{
+	int	i;
+
+	i = 0;
+	while (i < data->number_of_philosophers)
+	{
+		pthread_join(data->philosophers[i].thread_id, NULL);
+		i++;
+	}
 }
 
 void	begin_philosophers_routine(t_general *data)

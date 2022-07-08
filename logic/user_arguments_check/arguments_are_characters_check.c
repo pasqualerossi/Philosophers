@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   arguments_are_characters__check.c                  :+:      :+:    :+:   */
+/*   arguments_are_characters_check.c                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:49:54 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/08 18:39:43 by prossi           ###   ########.fr       */
+/*   Updated: 2022/07/08 15:30:40 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/philosophers.h"
+#include "../../header/philosophers.h"
 
 int	arguments_outside_limits(char *str)
 {

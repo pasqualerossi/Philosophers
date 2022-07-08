@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:57:08 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/08 18:34:24 by prossi           ###   ########.fr       */
+/*   Updated: 2022/07/08 15:30:40 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/philosophers.h"
+#include "../../header/philosophers.h"
 
 int	initialise_philosophers(t_general *general)
 {
@@ -54,6 +54,12 @@ int	mutex(t_general *general)
 	return (SUCCESS);
 }
 
+void	unlock_philosophers_mutex(t_general *philosophers)
+{
+	pthread_mutex_unlock(philosophers->left_fork);
+	pthread_mutex_unlock(philosophers->right_fork);
+}
+
 int	structs(t_general *general, char **argv)
 {
 	general->number_of_philosophers = ft_atoi(argv[1]);
@@ -81,6 +87,9 @@ int	main(int argc, char **argv)
 		if (structs(&general, argv))
 		{
 			begin_philosophers_routine(&general);
+			begin_monitoring(&general);
+			join_threads(&general);
+			free_philosophers(&general);
 		}
 	}
 }

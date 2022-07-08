@@ -6,11 +6,11 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:47:50 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/08 18:40:37 by prossi           ###   ########.fr       */
+/*   Updated: 2022/07/08 15:30:40 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/philosophers.h"
+#include "../../header/philosophers.h"
 
 int	is_numeric(int count)
 {

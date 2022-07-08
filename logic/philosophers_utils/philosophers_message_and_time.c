@@ -6,18 +6,21 @@
 /*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:07:38 by prossi            #+#    #+#             */
-/*   Updated: 2022/06/08 18:35:24 by prossi           ###   ########.fr       */
+/*   Updated: 2022/07/08 15:30:40 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/philosophers.h"
+#include "../../header/philosophers.h"
 
 void	print_message(char *str, t_philo *philosopher)
 {
-	pthread_mutex_lock(&philosopher->general->mutex);
-	printf("%d %d %s\n", get_time()
-		- philosopher->general->starting_time, philosopher->id, str);
-	pthread_mutex_unlock(&philosopher->general->mutex);
+	if (!philosopher_is_dead(philosopher))
+	{
+		pthread_mutex_lock(&philosopher->general->mutex);
+			printf("%d %d %s\n", get_time()
+				- philosopher->general->starting_time, philosopher->id, str);
+		pthread_mutex_unlock(&philosopher->general->mutex);
+	}
 }
 
 int	get_time(void)
