@@ -7,6 +7,7 @@ FLAGS = -Wall -Wextra -Werror -Iheaders
 SOURCES = ./logic/errors_check/errors_check.c \
 		  ./logic/libft/libft.c \
 		  ./logic/philosophers_actions/philosopher_actions.c \
+		  ./logic/philosophers_actions/philosopher_monitoring.c \
 		  ./logic/philosophers_actions/philosophers_routine.c \
 		  ./logic/philosophers_program/mutex_structs_main.c \
 		  ./logic/philosophers_utils/philosophers_message_and_time.c \
