@@ -1,7 +1,3 @@
-# Philosophers
-
-This project is currently in progress and is not completed just yet. 
-
 # To Run Philosophers
 
 1 - type `make` <br>
