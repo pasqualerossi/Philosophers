@@ -1,3 +1,6 @@
+# Philosophers Resource
+https://philosophers.simple.ink/
+
 # To Run Philosophers
 
 1 - Copy and paste this in iTerm/Terminal `git clone https://github.com/pasqualerossi/Philosophers.git && cd Philosophers && make` <br>
