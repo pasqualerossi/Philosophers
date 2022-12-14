@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   arguments_are_numbers_check.c                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42adel.org.au>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:47:50 by prossi            #+#    #+#             */
-/*   Updated: 2022/07/08 15:30:40 by prossi           ###   ########.fr       */
+/*   Updated: 2022/12/14 18:27:24 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../header/philosophers.h"
+#include "../philosophers.h"
 
 int	is_numeric(int count)
 {

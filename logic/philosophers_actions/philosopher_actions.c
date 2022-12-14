@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   philosopher_actions.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42adel.org.au>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:02:10 by prossi            #+#    #+#             */
-/*   Updated: 2022/07/08 16:04:30 by prossi           ###   ########.fr       */
+/*   Updated: 2022/12/14 20:04:36 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../header/philosophers.h"
+#include "../philosophers.h"
 
 int	philosopher_takes_forks(t_philo *philosophers)
 {
@@ -32,7 +32,7 @@ int	philosopher_takes_forks(t_philo *philosophers)
 		if (pthread_mutex_lock(philosophers->right_fork) != 0)
 			return (pthread_mutex_unlock(philosophers->left_fork), 1);
 		if (!philosopher_is_dead(philosophers))
-			print_message("has taken a fork", philosophers);	
+			print_message("has taken a fork", philosophers);
 	}
 	return (0);
 }

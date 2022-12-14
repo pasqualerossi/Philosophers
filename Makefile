@@ -2,30 +2,21 @@ NAME = philo
 
 CC = gcc
 
-FLAGS = -Wall -Wextra -Werror -Iheaders
+FLAGS = -Wall -Wextra -Werror
 
-SOURCES = ./logic/errors_check/errors_check.c \
-		  ./logic/libft/libft.c \
-		  ./logic/philosophers_actions/philosopher_actions.c \
+SOURCES = ./logic/philosophers_actions/philosopher_actions.c \
 		  ./logic/philosophers_actions/philosopher_monitoring.c \
 		  ./logic/philosophers_actions/philosophers_routine.c \
-		  ./logic/philosophers_program/mutex_structs_main.c \
-		  ./logic/philosophers_utils/philosophers_message_and_time.c \
+		  ./logic/philosophers_utils/utils_2.c \
+		  ./logic/philosophers_utils/utils.c \
 		  ./logic/user_arguments_check/arguments_are_characters_check.c \
 		  ./logic/user_arguments_check/arguments_are_numbers_check.c \
+		  ./logic/main.c
 
-OBJECTS = $(SOURCES:.c=.o)
+all:
+	$(CC) $(FLAGS) $(SOURCES) -o $(NAME)
 
-$(NAME): $(OBJECTS)
-	$(CC) $(FLAGS) $(SOURCES) -Iheaders -o $(NAME)
-
-all: $(NAME)
-
-clean:
-	@rm -rf *.o
-	@echo "cleaning the .o files"
-
-fclean: clean
+fclean: 
 	@rm -rf $(NAME)
 
 re: fclean all

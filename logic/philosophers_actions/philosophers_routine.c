@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   philosophers_routine.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42adel.org.au>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:05:38 by prossi            #+#    #+#             */
-/*   Updated: 2022/07/08 15:30:40 by prossi           ###   ########.fr       */
+/*   Updated: 2022/12/14 18:27:06 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../header/philosophers.h"
+#include "../philosophers.h"
 
 void	*philosophers_routine(void *arguments)
 {

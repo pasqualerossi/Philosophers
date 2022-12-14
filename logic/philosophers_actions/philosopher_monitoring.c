@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   philosopher_monitoring.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <prossi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: prossi <prossi@student.42adel.org.au>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 18:18:09 by prossi            #+#    #+#             */
-/*   Updated: 2022/07/08 20:28:31 by prossi           ###   ########.fr       */
+/*   Updated: 2022/12/14 20:05:22 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../header/philosophers.h"
+#include "../philosophers.h"
 
-int	check_last_meal(t_philo *philosopher)
+int	check_last_meal(t_philo *philo)
 {
-	if (get_time() - philosopher->general->starting_time > philosopher->time_to_die)
+	if (get_time() - philo->general->starting_time > philo->time_to_die)
 	{
-		philosopher->general->philosopher_dead = 1;
+		philo->general->philosopher_dead = 1;
 		printf("%d %d died\n", get_time()
-			- philosopher->general->starting_time, philosopher->id);
+			- philo->general->starting_time, philo->id);
 		return (0);
 	}
 	else
